@@ -24,8 +24,10 @@
 
 /* Python 3.10 needs extra __annotations__ entries in PyGetSetDef of
  * subclasses. */
+#if 0
 #if PY_VERSION_HEX >= 0x030a0000
 #define WRAPT_ANNOTATIONS_GETSET_WORKAROUND 1
+#endif
 #endif
 
 /* ------------------------------------------------------------------------- */
